@@ -1,179 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="The Hackademic">
-    <meta name="author" content="">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-layers.min.js"></script>
+    <script src="/js/init.js"></script>
+    <link rel="stylesheet" href="/css/pygment.css" />
+    <noscript>
+        <link rel="stylesheet" href="/css/skel.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-noscript.css" />
+    </noscript>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
 
-        <title>A new blog post · The Hackademic</title>
-
-
-    <!-- Bootstrap core CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css" type="text/css"><link rel="stylesheet" href="/theme/css/main.css"><link rel="stylesheet" href="/theme/css/code.css"><script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
-    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/flatly/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="/theme/css/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="/theme/css/flatly.css" type="text/css">-->
-    <!--<link rel="stylesheet" href="/theme/css/main.css" type="text/css">-->
-    <!--<script src="/theme/js/jquery-1.10.2.min.js"></script>-->
-    <!--<script src="/theme/js/jquery-migrate-1.2.1.min.js"></script>-->
-    <!--<script src="/theme/js/bootstrap.min.js"></script>-->
-
+    <title>A new blog post | The Hackademic </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
 </head>
 
-<body>
-  <div class="containter" id="wrap">
-      <nav id="navbar" class="navbar navbar-default" role="navigation">
-    <div class="container">
+<body class=" loading">
 
-      <!--navbar-header-->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-          <a class="navbar-brand" href="/">The Hackademic</a>
-      </div> <!--navbar-header-->
 
-      <!-- Search Box -->
-          <form class="navbar-form navbar-right" role="search"
-            action="http://www.google.com/cse" 
-            id="searchbox_003717689504249971076:e6ciq0f7_-4" target="_blank"> 
-              <input type="hidden" name="cx" value="003717689504249971076:e6ciq0f7_-4" /> 
-              <input type="text" name="q" class="form-control" placeholder="Search">
-          </form>
 
-      <!--Menuitems, collapable-->
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav navbar-right" id="menuitem-list">
-                <li >
-                  <a href="/">Home</a>
+    <!-- Header -->
+    <header id="header" >
+        <h1 class="logo">
+            <a href="http://smargh.github.io/hackademic">The Hackademic, design Twenty <span> by html5 up</span></a>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
+                    <li><a href="/">Home</a></li>
+                    <li><a href="[(u'Tags', u'/tags.html'), (u'Categories', u'/categories.html'), (u'Chronological', u'/archives.html')]">Archives</a></li>
+                    <li><a href="[(u'Email', u'url to your email'), (u'Github', u'url to your github'), (u'Facebook', u'url to your facebook')]">Social</a></li>
+                    <li><a href="003717689504249971076:e6ciq0f7_-4">Search</a></li>
+                <li class="submenu">
+                    <a href="http://smargh.github.io/hackademic/">Blog</a>
+                    <ul>
+                            <li class="active">
+                                <a href="http://smargh.github.io/hackademic/category/test/">Test</a>
+                            </li>
+                    </ul>
                 </li>
+                <li><a href="#" class="button special">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
 
-              <li class="btn-group">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives<b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                  <li >
-                    <a href="/tags.html">Tags</a>
-                  </li>
-                  <li >
-                    <a href="/categories.html">Categories</a>
-                  </li>
-                  <li >
-                    <a href="/archives.html">Chronological</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="btn-group">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social<b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                  <li >
-                    <a href="url to your email">Email</a>
-                  </li>
-                  <li >
-                    <a href="url to your github">Github</a>
-                  </li>
-                  <li >
-                    <a href="url to your facebook">Facebook</a>
-                  </li>
-                </ul>
-              </li>
+<!-- Main -->
+<article id="main">
 
-        </ul>
-      </div><!-- /.navbar-collapse -->
+  <header class="special container">
+    <span class="icon fa-"></span>
+    <h2>A new blog post</h2>
+    <!-- add page sub title here -->
+    <p>Posted on Mon 08 December 2014 by </p>
+    <p></p>
+  </header>
 
-    </div> <!--container-->
-  </nav>
+  <!-- One -->
+    <section class="wrapper style4 container">
 
-
-    <div class="container">
-      <div class="col-md-2">
-      </div>
-
-      <div class="col-md-8">
-        <div class="row">
-              <div class="page-header">
-        <h1><a href="/a-new-blog-post.html">A new blog post</a></h1>
-    </div>
-
+      <!-- Content -->
+        <div class="content">
+          <section>
+            <!-- <a href="#" class="image feature"><img src="images/pic04.jpg" alt="" /></a> -->
+            <h3>Posted in <a href="http://smargh.github.io/hackademic/category/test.html">Test</a></h3>
+            <p class="tags">
+</p>
+            <p><p>This is a <em>new</em> blog post.</p></p>
+          </section>
         </div>
 
+    </section>
+
+    <!-- Two -->
+    <section class="wrapper style1 container special">
         <div class="row">
+          <div class="4u">
 
-    <span id="article_info">
-    <a class="label label-primary" 
-      href="/categories.html#Test">
-      <!--href="/category/Test.html">-->Test</a>
-    <!--<span class="glyphicon glyphicon-calendar"></span>-->
-      <b> · </b>
-      <a href="/archives.html#Year2014">2014</a>-<a href="/archives.html#Year2014Month12">12</a>-<a href="/archives.html#Year2014Month12">08</a>
-      <!--<a href="/archives.html#Year2014Month12Day08">08</a>-->
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="http://smargh.github.io/hackademic/a-new-blog-post.html" rel='bookmark'><h3>A new blog post</h3></a>
+              </header>
+              <p>This is a new blog post.</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="http://smargh.github.io/hackademic/a-new-blog-post.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
 
-    <!--<span class="glyphicon glyphicon-user"></span>-->
-    <a href=""></a>
-  </span>
+          </div>
+          <div class="4u">
 
-  <hr/>
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="http://smargh.github.io/hackademic/test.html" rel='bookmark'><h3>TEST</h3></a>
+              </header>
+              <p>This is another new blog post. or 1 3</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="http://smargh.github.io/hackademic/test.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
 
-  <div id="article_content">
-    <p>This is a <em>new</em> blog post.</p>
-  </div>
+          </div>
+        </div>
+    </section>
+  </article>
 
-  <hr/>
 
-      <ul class="pager">
-        <li class="previous disabled">
-        <a >
-          &laquo; Newer</a>
+
+<!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+        <li>
+          <a href="#" class="icon circle fa fa-You can add links in your config file"><span class="label">You can add links in your config file</span></a>
         </li>
-        <li class="next">
-        <a href="/test.html">
-          Older &raquo;</a>
+        <li>
+          <a href="#" class="icon circle fa fa-Another social link"><span class="label">Another social link</span></a>
         </li>
-      </ul>
+    </ul>
 
+    <span class="copyright">&copy; Untitled. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
 
-        </div>
-
-        <div class="row">
-        </div>
-
-      </div>
-
-      <div class="col-md-2">
-      </div>
-    </div>
-
-
-  </div>
-
-    <nav id="footer" class="navbar navbar-default">
-    <div class="container">
-        <p id="footer-text" class="navbar-text text-center">
-          <span id="engine">
-            Compiled using
-            <a href="http://docs.getpelican.com">Pelican</a>
-          </span>
-          <span id="theme">
-            with theme
-            <a href="http://github.com/yuex/pelican-iliork">iliork</a>
-          </span>
-          <span id="bootstrap">
-            on top of
-            <a href="http://getbootstrap.com/">Bootstrap</a>
-          </span>
-        </p>
-      </div>
-    </div>
-  </nav>
-
+</footer>
 </body>
 </html>
