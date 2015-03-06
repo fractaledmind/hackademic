@@ -1,280 +1,156 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="The Hackademic">
-    <meta name="author" content="">
+    <title>hackademic</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>The Hackademic</title>
 
 
-    <!-- Bootstrap core CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css" type="text/css"><link rel="stylesheet" href="/theme/css/main.css"><link rel="stylesheet" href="/theme/css/code.css"><script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<link rel="canonical" href="http://localhost:8000">
+        <meta name="author" content="Stephen Margheim" />
 
-    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/flatly/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="/theme/css/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="/theme/css/flatly.css" type="text/css">-->
-    <!--<link rel="stylesheet" href="/theme/css/main.css" type="text/css">-->
-    <!--<script src="/theme/js/jquery-1.10.2.min.js"></script>-->
-    <!--<script src="/theme/js/jquery-migrate-1.2.1.min.js"></script>-->
-    <!--<script src="/theme/js/bootstrap.min.js"></script>-->
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="hackademic" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="hackademic"/>
+        <meta property="og:url" content="http://localhost:8000"/>
+        <meta property="og:description" content="hackademic"/>
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="http://localhost:8000/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://localhost:8000/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost:8000/theme/css/style.css" type="text/css"/>
+
 
 </head>
-
 <body>
-  <div class="containter" id="wrap">
-      <nav id="navbar" class="navbar navbar-default" role="navigation">
-    <div class="container">
 
-      <!--navbar-header-->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-          <a class="navbar-brand" href="/">The Hackademic</a>
-      </div> <!--navbar-header-->
-
-      <!-- Search Box -->
-          <form class="navbar-form navbar-right" role="search"
-            action="http://www.google.com/cse" 
-            id="searchbox_003717689504249971076:e6ciq0f7_-4" target="_blank"> 
-              <input type="hidden" name="cx" value="003717689504249971076:e6ciq0f7_-4" /> 
-              <input type="text" name="q" class="form-control" placeholder="Search">
-          </form>
-
-      <!--Menuitems, collapable-->
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav navbar-right" id="menuitem-list">
-                <li class="active">
-                  <a href="/">Home</a>
-                </li>
-
-              <li class="btn-group">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives<b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                  <li >
-                    <a href="/tags.html">Tags</a>
-                  </li>
-                  <li >
-                    <a href="/categories.html">Categories</a>
-                  </li>
-                  <li >
-                    <a href="/archives.html">Chronological</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="btn-group">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social<b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                  <li >
-                    <a href="url to your email">Email</a>
-                  </li>
-                  <li >
-                    <a href="url to your github">Github</a>
-                  </li>
-                  <li >
-                    <a href="url to your facebook">Facebook</a>
-                  </li>
-                </ul>
-              </li>
-
-        </ul>
-      </div><!-- /.navbar-collapse -->
-
-    </div> <!--container-->
-  </nav>
-
-
-    <div class="container">
-      <div class="col-md-2">
-      </div>
-
-      <div class="col-md-8">
-        <div class="row">
-          
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://localhost:8000/" class="navbar-brand">
+hackademic            </a>
         </div>
-
-        <div class="row">
-
-  <div id="home_article_list" class="panel-group" id="accordion">
-
-    <div class="panel panel-primary">
-      <div class="panel-heading panel-title">
-        <a href="/archives.html#Year2014">2014</a> - <a href="/archives.html#Year2014Month12">December</a>
-      <a class="accordion-toggle" data-toggle="collapse" 
-        title="toggle folding"
-        href="#collapseArticle1">
-        <span class="pull-right badge">
-          #2
-        </span>
-      </a>
-      </div>
-
-      <div class="panel-body hidden">
-
-      </div>
-
-      <ul class="list-group">
-        <a href="/a-new-blog-post.html">
-          <li class="list-group-item">
-            <h1>A new blog post</h1>
-          </li>
-        </a>
-        <div class="collapse in"
-          id="collapseArticle1">
-          <li class="list-group-item">
-              <span id="article_info">
-    <a class="label label-primary" 
-      href="/categories.html#Test">
-      <!--href="/category/Test.html">-->Test</a>
-    <!--<span class="glyphicon glyphicon-calendar"></span>-->
-      <b> · </b>
-      <a href="/archives.html#Year2014">2014</a>-<a href="/archives.html#Year2014Month12">12</a>-<a href="/archives.html#Year2014Month12">08</a>
-      <!--<a href="/archives.html#Year2014Month12Day08">08</a>-->
-
-    <!--<span class="glyphicon glyphicon-user"></span>-->
-    <a href=""></a>
-  </span>
-
-            <a class="pull-right" href="/a-new-blog-post.html">
-              </a>
-          </li>
-          <li class="list-group-item"><p>This is a <em>new</em> blog post.</p></li>
-          <li class="list-group-item text-right">
-            <div class="btn-group">
-              <a class="btn btn-primary" href="/a-new-blog-post.html#disqus_thread" title="comments">
-                <span class="glyphicon glyphicon-comment"></span></a>
-              <a class="btn btn-primary" href="/a-new-blog-post.html" title="permanent link">
-                <span class="glyphicon glyphicon-link"></span></a>
-              <a class="btn btn-primary" href="/a-new-blog-post.html" title="read more">
-                <span class="glyphicon glyphicon-plus"></span></a>
-            </div>
-          </li>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="http://localhost:8000/category/python/">Python</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://localhost:8000/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
         </div>
-      </ul>
+        <!-- /.navbar-collapse -->
     </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
 
-    <div class="panel panel-primary">
-      <div class="panel-heading panel-title">
-        <a href="/archives.html#Year2014">2014</a> - <a href="/archives.html#Year2014Month12">December</a>
-      <a class="accordion-toggle" data-toggle="collapse" 
-        title="toggle folding"
-        href="#collapseArticle2">
-        <span class="pull-right badge">
-          #1
-        </span>
-      </a>
-      </div>
+            <article>
+                <h2><a href="http://localhost:8000/posts/2015/03/welcome-all/">Welcome All</a></h2>
+                <div class="summary"><p>Short version for index and feeds</p>
+                    <a class="btn btn-default btn-xs" href="http://localhost:8000/posts/2015/03/welcome-all/">more ...</a>
+                </div>
+            </article>
+            <hr/>
 
-      <div class="panel-body hidden">
-
-      </div>
-
-      <ul class="list-group">
-        <a href="/test.html">
-          <li class="list-group-item">
-            <h1>TEST</h1>
-          </li>
-        </a>
-        <div class="collapse in"
-          id="collapseArticle2">
-          <li class="list-group-item">
-              <span id="article_info">
-    <a class="label label-primary" 
-      href="/categories.html#Test">
-      <!--href="/category/Test.html">-->Test</a>
-    <!--<span class="glyphicon glyphicon-calendar"></span>-->
-      <b> · </b>
-      <a href="/archives.html#Year2014">2014</a>-<a href="/archives.html#Year2014Month12">12</a>-<a href="/archives.html#Year2014Month12">08</a>
-      <!--<a href="/archives.html#Year2014Month12Day08">08</a>-->
-
-    <!--<span class="glyphicon glyphicon-user"></span>-->
-    <a href=""></a>
-  </span>
-
-            <a class="pull-right" href="/test.html">
-              </a>
-          </li>
-          <li class="list-group-item"><p>This is another <em>new</em> blog post. </p>
-<ul>
-<li>or</li>
-<li>1</li>
-<li>3</li>
-</ul></li>
-          <li class="list-group-item text-right">
-            <div class="btn-group">
-              <a class="btn btn-primary" href="/test.html#disqus_thread" title="comments">
-                <span class="glyphicon glyphicon-comment"></span></a>
-              <a class="btn btn-primary" href="/test.html" title="permanent link">
-                <span class="glyphicon glyphicon-link"></span></a>
-              <a class="btn btn-primary" href="/test.html" title="read more">
-                <span class="glyphicon glyphicon-plus"></span></a>
-            </div>
-          </li>
         </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="http://github.com/smargh"><i class="fa fa-github-square fa-lg"></i> Github</a></li>
+                <li class="list-group-item"><a href="http://twitter.com/s_margheim"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+                <li class="list-group-item"><a href="http://feeds.feedburner.com/smargh"><i class="fa fa-rss-square fa-lg"></i> RSS</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="list-group-item"><a href="http://localhost:8000/tags/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group " id="tags">
+                    <li class="list-group-item tag-4">
+                        <a href="http://localhost:8000/tag/pelican/">
+                            pelican
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="http://localhost:8000/tag/publishing/">
+                            publishing
+                        </a>
+                    </li>
+                </ul>
+            </li>
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" target="_blank">
+                You can modify those links in your config file
+            </a>
+        </li>
       </ul>
-    </div>
-  </div>
-
-        </div>
-
-        <div class="row">
-      <ul class="pagination">
-
-        <li class="disabled">
-          <a>&laquo;</a>
-        </li>
-
-        <li class="active">
-          <a>1<span class="sr-only">(current)</span></a>
-        </li>
-
-        <li class="disabled">
-          <a>&raquo;</a>
-        </li>
-
+    </li>
     </ul>
-
+</section>
+            </aside>
         </div>
-
-      </div>
-
-      <div class="col-md-2">
-      </div>
     </div>
-
-
-  </div>
-
-    <nav id="footer" class="navbar navbar-default">
-    <div class="container">
-        <p id="footer-text" class="navbar-text text-center">
-          <span id="engine">
-            Compiled using
-            <a href="http://docs.getpelican.com">Pelican</a>
-          </span>
-          <span id="theme">
-            with theme
-            <a href="http://github.com/yuex/pelican-iliork">iliork</a>
-          </span>
-          <span id="bootstrap">
-            on top of
-            <a href="http://getbootstrap.com/">Bootstrap</a>
-          </span>
-        </p>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2015 Stephen Margheim
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
       </div>
-    </div>
-  </nav>
+   </div>
+</footer>
+<script src="http://localhost:8000/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://localhost:8000/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://localhost:8000/theme/js/respond.min.js"></script>
+
 
 </body>
 </html>
